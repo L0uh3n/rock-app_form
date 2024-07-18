@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "rock_app",
-    "slug": "rock_app",
+    "name": "rock-app_form",
+    "slug": "rock-app_form",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
