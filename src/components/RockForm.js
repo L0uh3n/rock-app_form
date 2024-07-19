@@ -131,7 +131,9 @@ export function RockForm() {
                                     status={ehDoRockRadio === 'first' ? 'checked' : 'unchecked'}
                                     onPress={() => setehDoRockRadio('first')}
                                     color="black"
-                                /> <Text style={styles.radioLabel}>Sim</Text>
+                                />
+                                
+                                <Text style={styles.radioLabel}>Sim</Text>
                             </View>
 
                             <View style={styles.radioButton}>
@@ -140,7 +142,9 @@ export function RockForm() {
                                     status={ehDoRockRadio === 'second' ? 'checked' : 'unchecked'}
                                     onPress={() => setehDoRockRadio('second')}
                                     color="black"
-                                /> <Text style={styles.radioLabel}>Claro</Text>
+                                />
+                                
+                                <Text style={styles.radioLabel}>Claro</Text>
                             </View>
                         </View>
                     </View>
