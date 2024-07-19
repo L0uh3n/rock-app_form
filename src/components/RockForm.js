@@ -52,10 +52,8 @@ export function RockForm() {
             console.log('Erro ao carregar e tocar o som:', error);
         }
 
-        setTimeout(() => {
-            setModalImage(image);
-            toggleModal();
-        }, 500);
+        setModalImage(image);
+        toggleModal();
     };
 
     const stopCurrentSound = async () => {
@@ -135,7 +133,7 @@ export function RockForm() {
                                     status={ehDoRockRadio === 'first' ? 'checked' : 'unchecked'}
                                     onPress={() => setehDoRockRadio('first')}
                                     color="black"
-                                /> 
+                                />
 
                                 <Text style={styles.radioLabel}>Sim</Text>
                             </View>
@@ -146,7 +144,7 @@ export function RockForm() {
                                     status={ehDoRockRadio === 'second' ? 'checked' : 'unchecked'}
                                     onPress={() => setehDoRockRadio('second')}
                                     color="black"
-                                /> 
+                                />
 
                                 <Text style={styles.radioLabel}>Claro</Text>
                             </View>
@@ -172,7 +170,6 @@ export function RockForm() {
                                 notFoundText='Não encontrado'
                                 checkBoxStyles={{ borderColor: 'black' }}
                                 badgeStyles={{ backgroundColor: 'black' }}
-                                maxHeight={600}
                             />
                         </View>
                     </View>
@@ -235,11 +232,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#f0f0f0',
         borderRadius: 10,
-        padding: 20,
-        width: '100%', 
+        width: '100%',
     },
     scrollContainer: {
         alignItems: 'center',
+        paddingHorizontal: 20,
     },
     title: {
         fontWeight: 'bold',
@@ -289,7 +286,7 @@ const styles = StyleSheet.create({
         elevation: 4,
         shadowColor: '#000',
         shadowOffset: {
-            width: 0,
+            width: 2,
             height: 2,
         },
         shadowOpacity: 0.25,
