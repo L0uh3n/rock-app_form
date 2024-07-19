@@ -90,8 +90,8 @@ export function RockForm() {
                     <TextInput style={styles.input}
                         value={nome}
                         onChangeText={setNome}
-                        autoFocus={true}>
-                    </TextInput>
+                        autoFocus={true}
+                    />
 
                     <Text style={styles.label}>Data de Nascimento</Text>
                     <MaskInput
@@ -118,8 +118,8 @@ export function RockForm() {
                         value={email}
                         onChangeText={setEmail}
                         placeholder="example@gmail.com"
-                        placeholderTextColor='gray'>
-                    </TextInput>
+                        placeholderTextColor='gray'
+                    />
 
                     <View style={styles.boxes}>
                         <Text style={styles.question}>VOCÊ É DO ROCK?</Text>
@@ -131,8 +131,8 @@ export function RockForm() {
                                     status={ehDoRockRadio === 'first' ? 'checked' : 'unchecked'}
                                     onPress={() => setehDoRockRadio('first')}
                                     color="black"
-                                />
-                                
+                                /> 
+
                                 <Text style={styles.radioLabel}>Sim</Text>
                             </View>
 
@@ -142,8 +142,8 @@ export function RockForm() {
                                     status={ehDoRockRadio === 'second' ? 'checked' : 'unchecked'}
                                     onPress={() => setehDoRockRadio('second')}
                                     color="black"
-                                />
-                                
+                                /> 
+
                                 <Text style={styles.radioLabel}>Claro</Text>
                             </View>
                         </View>
@@ -170,7 +170,6 @@ export function RockForm() {
                                 badgeStyles={{ backgroundColor: 'black' }}
                                 maxHeight={600}
                             />
-
                         </View>
                     </View>
 
@@ -181,7 +180,7 @@ export function RockForm() {
                             buttonColor='black'
                             mode='contained-tonal'
                             rippleColor={'gray'}
-                            labelStyle={{ fontSize: 20, fontWeight: 'bold', }}
+                            labelStyle={{ fontSize: 20, fontWeight: 'bold' }}
                             onPress={() => playSoundAndShowImage(require('../../assets/imgs/vsfd_rock.jpeg'), require('../../assets/sounds/vsfd_sou_rock.mp3'))}>
                             AGORA EU SOU DO ROCK!
                         </Button>
@@ -232,6 +231,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#f0f0f0',
         borderRadius: 10,
+        padding: 20,
+        width: '100%', 
     },
     scrollContainer: {
         alignItems: 'center',
@@ -240,6 +241,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         fontSize: 24,
+        marginTop: 25,
         marginBottom: 20,
     },
     question: {
@@ -251,7 +253,7 @@ const styles = StyleSheet.create({
     container: {
         margin: 20,
         alignItems: 'center',
-        minWidth: 300,
+        width: '100%',
         maxWidth: 600,
     },
     label: {
