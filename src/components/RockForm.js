@@ -91,6 +91,7 @@ export function RockForm() {
                         value={nome}
                         onChangeText={setNome}
                         autoFocus={true}
+                        keyboardType='default'
                     />
 
                     <Text style={styles.label}>Data de Nascimento</Text>
@@ -101,6 +102,7 @@ export function RockForm() {
                         mask={Masks.DATE_DDMMYYYY}
                         placeholder='DD/MM/AAAA'
                         placeholderTextColor="gray"
+                        keyboardType='number-pad'
                     />
 
                     <Text style={styles.label}>Número de Telefone</Text>
@@ -111,6 +113,7 @@ export function RockForm() {
                         mask={Masks.BRL_PHONE}
                         placeholder='(99) 99999-9999'
                         placeholderTextColor="gray"
+                        keyboardType='number-pad'
                     />
 
                     <Text style={styles.label}>Email</Text>
@@ -119,6 +122,7 @@ export function RockForm() {
                         onChangeText={setEmail}
                         placeholder="example@gmail.com"
                         placeholderTextColor='gray'
+                        keyboardType='email-address'
                     />
 
                     <View style={styles.boxes}>
@@ -241,7 +245,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         fontSize: 24,
-        marginTop: 25,
+        marginTop: 20,
         marginBottom: 20,
     },
     question: {
